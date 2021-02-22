@@ -38,11 +38,13 @@ const Navbar = () => {
                     Kitchen Remodeling
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Bathroom Remodeling
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Home Renovation and Additions
@@ -70,16 +72,19 @@ const Navbar = () => {
                     About Us
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Our Process
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Gallery
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Contact Us
@@ -107,11 +112,13 @@ const Navbar = () => {
                     Kitchen Remodel Pricing
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Bathroom Remodel Pricing
                   </a>
                 </li>
+                <li><hr class="dropdown-divider"/></li>
                 <li>
                   <a className="dropdown-item" href="/">
                     Home Renovation and Additions Pricing

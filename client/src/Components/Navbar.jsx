@@ -1,4 +1,4 @@
-const Landing = () => {
+const Navbar = () => {
     return (
         <>
             
@@ -6,4 +6,4 @@ const Landing = () => {
     );
 };
 
-export default Landing;
+export default Navbar;

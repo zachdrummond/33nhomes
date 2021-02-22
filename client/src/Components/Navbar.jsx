@@ -17,7 +17,7 @@ const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul className="navbar-nav">
+          <ul className="navbar-nav mx-auto">
             <li className="nav-item dropdown">
               <a
                 className="nav-link dropdown-toggle"
@@ -125,6 +125,9 @@ const Navbar = () => {
               </a>
             </li>
           </ul>
+          <button type="button" class="btn btn-danger">
+            Get a Quote
+          </button>
         </div>
       </div>
     </nav>

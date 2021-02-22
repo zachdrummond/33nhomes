@@ -1,12 +1,12 @@
 const Navbar = () => {
   return (
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          Navbar
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <div className="container-fluid">
+        <a className="navbar-brand" href="/">
+          33 North Homes & Construction LLC
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNavDropdown"
@@ -14,56 +14,115 @@ const Navbar = () => {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Features
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">
-                Pricing
-              </a>
-            </li>
-            <li class="nav-item dropdown">
+        <div className="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul className="navbar-nav">
+            <li className="nav-item dropdown">
               <a
-                class="nav-link dropdown-toggle"
-                href="#"
+                className="nav-link dropdown-toggle"
+                href="/"
                 id="navbarDropdownMenuLink"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Dropdown link
+                Services
               </a>
               <ul
-                class="dropdown-menu"
+                className="dropdown-menu"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Action
+                  <a className="dropdown-item" href="/">
+                    Kitchen Remodeling
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Another action
+                  <a className="dropdown-item" href="/">
+                    Bathroom Remodeling
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
-                    Something else here
+                  <a className="dropdown-item" href="/">
+                    Home Renovation and Additions
                   </a>
                 </li>
               </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                About
+              </a>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a className="dropdown-item" href="/">
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Our Process
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Gallery
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Contact Us
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="/"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Pricing
+              </a>
+              <ul
+                className="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Kitchen Remodel Pricing
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Bathroom Remodel Pricing
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="/">
+                    Home Renovation and Additions Pricing
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link active" aria-current="page" href="/">
+                (404) 992-8752
+              </a>
             </li>
           </ul>
         </div>

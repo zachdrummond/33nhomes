@@ -2,10 +2,17 @@ import basement from "../../images/basement.jpg";
 import kitchen from "../../images/kitchen.jpg";
 
 const Carousel = () => {
+
+  const styles = {
+    carousel: {
+      height: 500
+    }
+  };
+
   return (
     <div
       id="carouselExampleIndicators"
-      class="carousel slide"
+      class="carousel slide carousel-fade"
       data-bs-ride="carousel"
     >
       {/* -------------------------------------------------------------------- CAROUSEL INDICATORS */}
@@ -26,7 +33,7 @@ const Carousel = () => {
         ></button>
       </div>
       {/* -------------------------------------------------------------------- CAROUSEL IMAGES */}
-      <div class="carousel-inner">
+      <div class="carousel-inner" style={styles.carousel}>
         <div class="carousel-item active">
           <img src={basement} class="d-block w-100" alt="..." />
         </div>

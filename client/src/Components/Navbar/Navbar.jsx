@@ -3,7 +3,7 @@ import DropdownItem from "./DropdownItem";
 const Navbar = () => {
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container-fluid">
         {/* --------------------------------------------------------------- BRAND LOGO */}
         <a className="navbar-brand" href="/">

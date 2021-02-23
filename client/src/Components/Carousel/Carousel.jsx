@@ -8,6 +8,7 @@ const Carousel = () => {
       class="carousel slide"
       data-bs-ride="carousel"
     >
+      {/* -------------------------------------------------------------------- CAROUSEL INDICATORS */}
       <div class="carousel-indicators">
         <button
           type="button"
@@ -23,13 +24,8 @@ const Carousel = () => {
           data-bs-slide-to="1"
           aria-label="Slide 2"
         ></button>
-        <button
-          type="button"
-          data-bs-target="#carouselExampleIndicators"
-          data-bs-slide-to="2"
-          aria-label="Slide 3"
-        ></button>
       </div>
+      {/* -------------------------------------------------------------------- CAROUSEL IMAGES */}
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src={basement} class="d-block w-100" alt="..." />
@@ -38,6 +34,7 @@ const Carousel = () => {
           <img src={kitchen} class="d-block w-100" alt="..." />
         </div>
       </div>
+      {/* -------------------------------------------------------------------- CAROUSEL CONTROLS */}
       <button
         class="carousel-control-prev"
         type="button"

@@ -2,7 +2,7 @@ import React from "react";
 
 const Email = () => {
   return (
-    <a href="mailto: email@email.com" className="text-light">
+    <a href="mailto: email@email.com">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

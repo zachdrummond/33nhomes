@@ -5,7 +5,7 @@ import Email from "../Icons/Email";
 
 const Footer = () => {
   return (
-    <footer className="fixed-bottom bg-dark py-3">
+    <footer className="bg-dark py-3">
       <div className="container text-center text-light">
         <div className="row">
           {/* ---------------------------------------------------------------------------- Logo & Social Media */}

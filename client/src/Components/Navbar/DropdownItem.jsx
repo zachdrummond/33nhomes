@@ -7,7 +7,7 @@ const DropdownItem = ({ name }) => {
     },
     {
       name: "About",
-      options: ["About Us", "Our Process", "Contact Us"],
+      options: ["About Us", "Philosophy", "Contact Us"],
     },
   ];
 

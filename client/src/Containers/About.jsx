@@ -1,11 +1,13 @@
-import React from 'react';
+import AboutUs from "../Components/AboutUs/AboutUs";
+import Philosophy from "../Components/Philosophy/Philosophy";
 
 const About = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return (
+    <main className="container">
+      <AboutUs />
+      <Philosophy />
+    </main>
+  );
 };
 
 export default About;

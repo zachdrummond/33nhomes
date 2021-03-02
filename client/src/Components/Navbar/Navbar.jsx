@@ -26,7 +26,6 @@ const Navbar = () => {
           <ul className="navbar-nav mx-auto">
             <DropdownItem name="Services"/>
             <DropdownItem name="About"/>
-            <DropdownItem name="Pricing"/>
             <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="/">
                 (404) 992-8752

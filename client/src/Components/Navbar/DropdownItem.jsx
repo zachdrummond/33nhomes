@@ -7,15 +7,7 @@ const DropdownItem = ({ name }) => {
     },
     {
       name: "About",
-      options: ["About Us", "Our Process", "Gallery", "Contact Us"],
-    },
-    {
-      name: "Pricing",
-      options: [
-        "Kitchen Remodel Pricing",
-        "Basement Remodel Pricing",
-        "Home Additions Pricing",
-      ],
+      options: ["About Us", "Our Process", "Contact Us"],
     },
   ];
 

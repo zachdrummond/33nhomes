@@ -1,17 +1,24 @@
 import "./app.css";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "./Components/Navbar/Navbar";
-import Footer from "./Components/Footer/Footer";
 import Landing from "./Containers/Landing";
+import Services from "./Containers/Services";
+import About from "./Containers/About";
+import Pricing from "./Containers/Pricing";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
-    <div id="page-container">
+    <Router id="page-container">
       <Navbar />
-      <div id="content-wrap">
-        <Landing />
-      </div>
-      <Footer/>
-    </div>
+      <Switch id="content-wrap">
+        <Route exact path="/services" component={Services} />
+        <Route exact path="/about" component={About} />
+        <Route exact path="/pricing" component={Pricing} />
+        <Route exact path="/" component={Landing} />
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

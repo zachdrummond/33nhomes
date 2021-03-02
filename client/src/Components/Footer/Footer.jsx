@@ -1,4 +1,3 @@
-import "./Footer.css";
 import GitHub from "../Icons/GitHub";
 import Facebook from "../Icons/Facebook";
 import Phone from "../Icons/Phone";
@@ -31,12 +30,12 @@ const Footer = () => {
             <h4>About Us</h4>
             <ul className="list-unstyled">
               <li>
-                <a href="/">
+                <a href="/" className="text-light">
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="/" className="text-light">
                   Terms of Service
                 </a>
               </li>
@@ -46,10 +45,10 @@ const Footer = () => {
         {/* ---------------------------------------------------------------------------- Company & Website Designer */}
         <hr />
         <div className="row">
-          <p>
+          <h5>
             &copy;{new Date().getFullYear()} | 33 North Homes & Construction LLC
             | All Rights Reserved
-          </p>
+          </h5>
           <div className="col-12 col-md">
             <span>Website Designed by Zach Drummond </span>
             <GitHub />

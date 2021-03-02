@@ -2,7 +2,7 @@ import React from "react";
 
 const Phone = () => {
   return (
-    <a href="tel: +4049928752">
+    <a href="tel: +4049928752" className="text-light">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="16"

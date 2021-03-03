@@ -1,9 +1,11 @@
 import Section from "../Components/Section/Section";
+import Testimonials from "../Components/Testimonials/Testimonials";
+import Contact from "../Components/Contact/Contact";
 
 const About = () => {
   return (
     <main className="container">
-      {/* --------------------------------------------------------------- About Us */}
+      {/* --------------------------------------------------------------- ABOUT US */}
       <Section
         title="33 North Homes & Construction LLC"
         direction="left"
@@ -87,6 +89,8 @@ const About = () => {
           </p>
         }
       />
+      <Testimonials />
+      <Contact />
     </main>
   );
 };

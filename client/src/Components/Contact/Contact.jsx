@@ -3,97 +3,132 @@ import React from "react";
 const Contact = () => {
   return (
     <section className="my-5">
-      <form class="row g-3">
+      <form className="row g-3">
         <h2 className="text-center">Tell Us About Your Project</h2>
         {/* --------------------------------------------------------------- FIRST & LAST NAME */}
-        <div class="col-md-6">
-          <label for="name">First and Last Name</label>
-          <input
-            type="text"
-            class="form-control"
-            id="name"
-            placeholder="First Name Last Name"
-          />
+        <div className="col-md-6">
+          <div class="form-floating">
+            <input
+              type="text"
+              className="form-control"
+              id="name"
+              placeholder="First Name Last Name"
+              required
+            />
+            <label for="name">First and Last Name</label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- PHONE NUMBER */}
-        <div class="col-md-6">
-          <label for="phone">Phone Number</label>
-          <input
-            type="number"
-            class="form-control"
-            id="phone"
-            placeholder="XXX-XXX-XXXX"
-          />
+        <div className="col-md-6">
+          <div class="form-floating">
+            <input
+              type="number"
+              className="form-control"
+              id="phone"
+              placeholder="XXX-XXX-XXXX"
+              required
+            />
+            <label for="phone">Phone Number</label>
+          </div>
         </div>
-        <div class="col-md-12">
-          {/* --------------------------------------------------------------- EMAIL ADDRESS */}
-          <label for="email">Email Address</label>
-          <input
-            type="email"
-            class="form-control"
-            id="email"
-            placeholder="name@example.com"
-          />
+        {/* --------------------------------------------------------------- EMAIL ADDRESS */}
+        <div className="col-md-12">
+          <div class="form-floating">
+            <input
+              type="email"
+              className="form-control"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
+            <label for="email">Email Address</label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- ADDRESS */}
-        <div class="col-12">
-          <label for="address" class="form-label">
-            Address
-          </label>
-          <input
-            type="text"
-            class="form-control"
-            id="address"
-            placeholder="1234 Main St"
-          />
+        <div className="col-12">
+          <div class="form-floating">
+            <input
+              type="text"
+              className="form-control"
+              id="address"
+              placeholder="1234 Main St"
+            />
+            <label for="address" className="form-label">
+              Address
+            </label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- CITY */}
-        <div class="col-md-6">
-          <label for="city" class="form-label">
-            City
-          </label>
-          <input type="text" class="form-control" id="city" />
+        <div className="col-md-6">
+          <div class="form-floating">
+            <input
+              type="text"
+              className="form-control"
+              id="city"
+              placeholder="City Name"
+            />
+            <label for="city" className="form-label">
+              City
+            </label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- STATE */}
-        <div class="col-md-4">
-          <label for="state" class="form-label">
-            State
-          </label>
-          <input type="text" class="form-control" id="state" />
+        <div className="col-md-4">
+          <div class="form-floating">
+            <input
+              type="text"
+              className="form-control"
+              id="state"
+              placeholder="State Name"
+            />
+            <label for="state" className="form-label">
+              State
+            </label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- ZIP CODE */}
-        <div class="col-md-2">
-          <label for="zip" class="form-label">
+        <div className="col-md-2">
+        <div class="form-floating">
+          <input type="text" className="form-control" id="zip" placeholder="Zip Code" required/>
+          <label for="zip" className="form-label">
             Zip
           </label>
-          <input type="text" class="form-control" id="zip" />
+        </div>
         </div>
         {/* --------------------------------------------------------------- DESCRIPTION */}
-        <div class="col-md-12">
+        <div className="col-md-12">
+        <div class="form-floating">
+          <textarea
+            className="form-control"
+            id="description"
+            rows="3"
+            placeholder="Description"
+            required
+          ></textarea>
           <label for="description">Briefly Describe Your Project</label>
-          <textarea class="form-control" id="description" rows="3"></textarea>
+        </div>
         </div>
         {/* --------------------------------------------------------------- PICTURES */}
-        <div class="col-md-4">
-          <label for="picture1" class="form-label">
+        <div className="col-md-4">
+          <label for="picture1" className="form-label">
             Picture 1
           </label>
-          <input class="form-control" type="file" id="picture1" />
+          <input className="form-control" type="file" id="picture1" required/>
         </div>
-        <div class="col-md-4">
-          <label for="picture2" class="form-label">
+        <div className="col-md-4">
+          <label for="picture2" className="form-label">
             Picture 2
           </label>
-          <input class="form-control" type="file" id="picture2" />
+          <input className="form-control" type="file" id="picture2" />
         </div>
-        <div class="col-md-4">
-          <label for="picture3" class="form-label">
+        <div className="col-md-4">
+          <label for="picture3" className="form-label">
             Picture 3
           </label>
-          <input class="form-control" type="file" id="picture3" />
+          <input className="form-control" type="file" id="picture3" />
         </div>
-        <div class="col-md-12">
-          <button type="submit" class="btn btn-primary">
+        <div className="col-md-12">
+          <button type="submit" className="btn btn-primary">
             Submit
           </button>
         </div>

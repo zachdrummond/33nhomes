@@ -1,7 +1,7 @@
+import { Link } from "react-scroll";
 import DropdownItem from "./DropdownItem";
 
 const Navbar = () => {
-
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light sticky-top">
       <div className="container-fluid">
@@ -24,18 +24,22 @@ const Navbar = () => {
         {/* --------------------------------------------------------------- NAVBAR MENU ITEMS */}
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav mx-auto">
-            <DropdownItem name="Services"/>
-            <DropdownItem name="About"/>
+            <DropdownItem name="Services" />
+            <DropdownItem name="About" />
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/">
+              <a
+                className="nav-link active"
+                aria-current="page"
+                href="tel: +(404) 992-8752"
+              >
                 (404) 992-8752
               </a>
             </li>
           </ul>
           {/* --------------------------------------------------------------- GET A QUOTE BUTTON */}
-          <button type="button" className="btn btn-danger">
+          <Link className="btn btn-danger" to="Contact Us" offset={-100}>
             Get a Quote
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

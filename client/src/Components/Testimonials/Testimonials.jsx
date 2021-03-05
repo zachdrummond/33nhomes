@@ -38,8 +38,7 @@ const Testimonials = ({id}) => {
       <section id={id} className="my-5">
         <h2 className="text-center mb-4">Customer Reviews</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
-          {reviews
-            ? reviews.map((review) => {
+          {reviews.map((review) => {
                 return (
                   <div class="col">
                     <div class="card h-100">
@@ -60,8 +59,7 @@ const Testimonials = ({id}) => {
                     </div>
                   </div>
                 );
-              })
-            : ""}
+              })}
         </div>
       </section>
       <hr />

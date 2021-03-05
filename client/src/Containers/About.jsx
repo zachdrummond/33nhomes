@@ -7,6 +7,7 @@ const About = () => {
     <main className="container">
       {/* --------------------------------------------------------------- ABOUT US */}
       <Section
+        id="About Us"
         title="33 North Homes & Construction LLC"
         direction="left"
         image={
@@ -40,7 +41,8 @@ const About = () => {
       />
       {/* --------------------------------------------------------------- PHILOSOPHY & BENEFITS */}
       <Section
-        title="Philosphy & Benefits"
+        id="Philosophy"
+        title="Philosophy & Benefits"
         direction="right"
         image={
           <ul>
@@ -89,8 +91,8 @@ const About = () => {
           </p>
         }
       />
-      <Testimonials />
-      <Contact />
+      <Testimonials id="Testimonials"/>
+      <Contact id="Contact Us"/>
     </main>
   );
 };

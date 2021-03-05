@@ -1,7 +1,7 @@
-const Section = ({ title, image, text, direction }) => {
+const Section = ({ id, title, image, text, direction }) => {
   return (
     <>
-      <section className="my-5">
+      <section id={id} className="my-5">
         <h2 className="text-center mb-4">{title}</h2>
         <div className="row">
           <div className="col-6 col-md">

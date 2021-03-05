@@ -1,8 +1,6 @@
-import React from "react";
-
-const Contact = () => {
+const Contact = ({id}) => {
   return (
-    <section className="my-5">
+    <section id={id} className="my-5">
       <form className="row g-3">
         <h2 className="text-center">Tell Us About Your Project</h2>
         {/* --------------------------------------------------------------- FIRST & LAST NAME */}

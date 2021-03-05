@@ -5,6 +5,7 @@ const Services = () => {
     <main className="container">
       {/* --------------------------------------------------------------- KITCHEN REMODELING */}
       <Section
+        id="Kitchen Remodeling"
         title="Kitchen Remodeling"
         direction="left"
         image={
@@ -30,6 +31,7 @@ const Services = () => {
       />
       {/* --------------------------------------------------------------- BASEMENT REMODELING */}
       <Section
+        id="Basement Remodeling"
         title="Basement Remodeling"
         direction="right"
         image={
@@ -55,6 +57,7 @@ const Services = () => {
       />
       {/* --------------------------------------------------------------- HOME ADDITIONS */}
       <Section
+        id="Home Additions"
         title="Home Additions"
         direction="left"
         image={

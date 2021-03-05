@@ -1,3 +1,5 @@
+import { Link } from "react-scroll";
+
 const DropdownItem = ({ name }) => {
   // Navbar Menu Items
   const menuItems = [
@@ -30,9 +32,13 @@ const DropdownItem = ({ name }) => {
             return item.options.map((options) => {
               return (
                 <li>
-                  <a className="dropdown-item" href="/">
+                  <Link
+                    className="dropdown-item"
+                    to={`${options}`}
+                    offset={-100}
+                  >
                     {options}
-                  </a>
+                  </Link>
                 </li>
               );
             });

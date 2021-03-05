@@ -1,4 +1,4 @@
-const Testimonials = () => {
+const Testimonials = ({id}) => {
   // Navbar Menu Items
   const reviews = [
     {
@@ -35,7 +35,7 @@ const Testimonials = () => {
 
   return (
     <>
-      <section className="my-5">
+      <section id={id} className="my-5">
         <h2 className="text-center mb-4">Customer Reviews</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4">
           {reviews

@@ -31,7 +31,7 @@ const DropdownItem = ({ name }) => {
           if (name === item.name) {
             return item.options.map((options) => {
               return (
-                <li>
+                <li key={options}>
                   <Link
                     className="dropdown-item"
                     to={`${options}`}

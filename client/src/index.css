@@ -27,7 +27,7 @@ textarea {
 [type="file"] + label {
   background-color: grey;
   border-radius: 2rem;
-  color: #fff;
+  color: #fff; /* #fff*/
   cursor: pointer;
   display: inline-block;
   line-height: 3rem;

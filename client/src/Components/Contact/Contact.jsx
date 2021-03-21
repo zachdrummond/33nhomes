@@ -1,4 +1,38 @@
+import { useState } from "react";
+
 const Contact = ({ id }) => {
+  // Currently Picked File
+  const [selectedFile, setSelectedFile] = useState({
+    picture1: {},
+    picture2: {},
+    picture3: {},
+  });
+  // Determines if a file has been picked
+  const [isFilePicked, setIsFilePicked] = useState({
+    picture1: false,
+    picture2: false,
+    picture3: false,
+  });
+
+  // Handles User choosing a file
+  const onFileChange = (e) => {
+    console.log(e.target.files[0]);
+    if (e.target.id == "picture1") {
+      setSelectedFile({ ...selectedFile, picture1: e.target.files[0] });
+      setIsFilePicked({ ...isFilePicked, picture1: true });
+    } else if (e.target.id == "picture2") {
+      setSelectedFile({ ...selectedFile, picture2: e.target.files[0] });
+      setIsFilePicked({ ...isFilePicked, picture2: true });
+    } else if (e.target.id == "picture3") {
+      setSelectedFile({ ...selectedFile, picture3: e.target.files[0] });
+      setIsFilePicked({ ...isFilePicked, picture3: true });
+    }
+  };
+
+  const onFileUpload = () => {
+    console.log("onFileUpload");
+  };
+
   return (
     <section id={id} className="my-5">
       <form className="row g-3">
@@ -114,25 +148,50 @@ const Contact = ({ id }) => {
         </div>
         {/* --------------------------------------------------------------- PICTURES */}
         <div className="col-md-4 text-center">
-          <input className="form-control" type="file" id="picture1"/>
+          <input
+            className="form-control"
+            type="file"
+            id="picture1"
+            onChange={onFileChange}
+          />
           <label htmlFor="picture1" className="form-label">
-            Upload Picture 1
+            {isFilePicked.picture1
+              ? selectedFile.picture1.name
+              : "Choose Picture 1"}
           </label>
         </div>
         <div className="col-md-4 text-center">
-          <input className="form-control" type="file" id="picture2" />
+          <input
+            className="form-control"
+            type="file"
+            id="picture2"
+            onChange={onFileChange}
+          />
           <label htmlFor="picture2" className="form-label">
-            Upload Picture 2
+            {isFilePicked.picture2
+              ? selectedFile.picture2.name
+              : "Choose Picture 2"}
           </label>
         </div>
         <div className="col-md-4 text-center">
-          <input className="form-control" type="file" id="picture3" />
+          <input
+            className="form-control"
+            type="file"
+            id="picture3"
+            onChange={onFileChange}
+          />
           <label htmlFor="picture3" className="form-label">
-            Upload Picture 3
+            {isFilePicked.picture3
+              ? selectedFile.picture3.name
+              : "Choose Picture 3"}
           </label>
         </div>
         <div className="col-md-12 text-center">
-          <button type="submit" className="btn-lg greenWhite">
+          <button
+            type="submit"
+            className="btn-lg greenWhite"
+            onClick={onFileUpload}
+          >
             Submit
           </button>
         </div>

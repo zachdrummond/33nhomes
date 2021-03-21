@@ -2,7 +2,7 @@ const Philosophy = ({ id }) => {
   return (
     <>
       <section id={id} className="my-5">
-        <h2 className="text-center mb-4">Philosophy & Benefits</h2>
+        <h1 className="text-center mb-4">Philosophy & Benefits</h1>
         <p>
           <u>
             State Licensed - RBCO006748 with a 2 Million General Liability

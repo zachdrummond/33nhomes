@@ -1,8 +1,8 @@
-const Contact = ({id}) => {
+const Contact = ({ id }) => {
   return (
     <section id={id} className="my-5">
       <form className="row g-3">
-        <h2 className="text-center">Tell Us About Your Project</h2>
+        <h1 className="text-center">Tell Us About Your Project</h1>
         {/* --------------------------------------------------------------- FIRST & LAST NAME */}
         <div className="col-md-6">
           <div className="form-floating">
@@ -86,47 +86,53 @@ const Contact = ({id}) => {
         </div>
         {/* --------------------------------------------------------------- ZIP CODE */}
         <div className="col-md-2">
-        <div className="form-floating">
-          <input type="text" className="form-control" id="zip" placeholder="Zip Code" required/>
-          <label htmlFor="zip" className="form-label">
-            Zip
-          </label>
-        </div>
+          <div className="form-floating">
+            <input
+              type="text"
+              className="form-control"
+              id="zip"
+              placeholder="Zip Code"
+              required
+            />
+            <label htmlFor="zip" className="form-label">
+              Zip
+            </label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- DESCRIPTION */}
         <div className="col-md-12">
-        <div className="form-floating">
-          <textarea
-            className="form-control"
-            id="description"
-            rows="3"
-            placeholder="Description"
-            required
-          ></textarea>
-          <label htmlFor="description">Briefly Describe Your Project</label>
-        </div>
+          <div className="form-floating">
+            <textarea
+              className="form-control"
+              id="description"
+              rows="3"
+              placeholder="Description"
+              required
+            ></textarea>
+            <label htmlFor="description">Briefly Describe Your Project</label>
+          </div>
         </div>
         {/* --------------------------------------------------------------- PICTURES */}
-        <div className="col-md-4">
+        <div className="col-md-4 text-center">
+          <input className="form-control" type="file" id="picture1"/>
           <label htmlFor="picture1" className="form-label">
-            Picture 1
+            Upload Picture 1
           </label>
-          <input className="form-control" type="file" id="picture1" required/>
         </div>
-        <div className="col-md-4">
-          <label htmlFor="picture2" className="form-label">
-            Picture 2
-          </label>
+        <div className="col-md-4 text-center">
           <input className="form-control" type="file" id="picture2" />
-        </div>
-        <div className="col-md-4">
-          <label htmlFor="picture3" className="form-label">
-            Picture 3
+          <label htmlFor="picture2" className="form-label">
+            Upload Picture 2
           </label>
-          <input className="form-control" type="file" id="picture3" />
         </div>
-        <div className="col-md-12">
-          <button type="submit" className="btn btn-primary">
+        <div className="col-md-4 text-center">
+          <input className="form-control" type="file" id="picture3" />
+          <label htmlFor="picture3" className="form-label">
+            Upload Picture 3
+          </label>
+        </div>
+        <div className="col-md-12 text-center">
+          <button type="submit" className="btn-lg greenWhite">
             Submit
           </button>
         </div>

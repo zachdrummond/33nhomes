@@ -1,0 +1,49 @@
+/* Contact Us - Tell Us About Your Project */
+input,
+textarea {
+  background: #eaeeee !important;
+}
+
+/* Makes any button with this class green */
+.greenWhite {
+  background: #6f908b !important;
+  color: white !important;
+}
+
+/* SECTION - Contact Us - Upload Picture Buttons*/
+/* Moves the upload button onto the label text */
+[type="file"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute !important;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* Changes the label */
+[type="file"] + label {
+  background-color: grey;
+  border-radius: 2rem;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  transition: background-color 0.3s;
+}
+
+/* Changes the label hover */
+[type="file"]:focus + label,
+[type="file"] + label:hover {
+  background-color: #6f908b;
+}
+
+/* Obtains the default outline look of the web browser */
+[type="file"]:focus + label {
+  outline: -webkit-focus-ring-color auto 5px;
+}
+/* SECTION END*/

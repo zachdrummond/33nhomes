@@ -1,4 +1,10 @@
 const Testimonials = ({ id }) => {
+  const styles = {
+    card: {
+      backgroundColor: "#dbe3e2",
+    },
+  };
+
   // Customer Reviews
   const reviews = [
     {
@@ -36,12 +42,12 @@ const Testimonials = ({ id }) => {
   return (
     <>
       <section id={id} className="my-5">
-        <h2 className="text-center mb-4">Customer Reviews</h2>
+        <h1 className="text-center mb-4">Customer Reviews</h1>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {reviews.map((review) => {
             return (
               <div key={review.name} className="col">
-                <div className="card h-100">
+                <div className="card h-100" style={styles.card}>
                   <div className="card-body text-center">
                     <p className="card-text">{review.feedback}</p>
                     <svg

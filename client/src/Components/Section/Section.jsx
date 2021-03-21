@@ -2,7 +2,7 @@ const Section = ({ id, title, image, text, direction }) => {
   return (
     <>
       <section id={id} className="my-5">
-        <h2 className="text-center mb-4">{title}</h2>
+        <h1 className="text-center mb-4">{title}</h1>
         <div className="row">
           <div className="col-6 col-md">
             {direction == "left" ? image : direction == "right" ? text : ""}

@@ -4,9 +4,16 @@ import Phone from "../Icons/Phone";
 import Email from "../Icons/Email";
 
 const Footer = () => {
+
+  const styles = {
+    footer: {
+      backgroundColor: "#6f908b",
+    },
+  };
+
   return (
-    <footer className="bg-dark py-3">
-      <div className="container text-center text-light">
+    <footer className="py-3 bg-dark text-light">
+      <div className="container text-center">
         <div className="row">
           {/* ---------------------------------------------------------------------------- Logo & Social Media */}
           <div className="col-12 col-md">

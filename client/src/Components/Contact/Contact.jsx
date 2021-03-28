@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Form from "./Form";
 
 const Contact = ({ id }) => {
   // Currently Picked File
@@ -38,101 +39,68 @@ const Contact = ({ id }) => {
       <form className="row g-3">
         <h1 className="text-center">Tell Us About Your Project</h1>
         {/* --------------------------------------------------------------- FIRST & LAST NAME */}
-        <div className="col-md-6">
-          <div className="form-floating">
-            <input
-              type="text"
-              className="form-control"
-              id="name"
-              placeholder="First Name Last Name"
-              required
-            />
-            <label htmlFor="name">First and Last Name</label>
-          </div>
-        </div>
+        <Form
+          className="col-md-6"
+          type="text"
+          id="name"
+          placeholder="First Name Last Name"
+          htmlFor="name"
+          label="First and Last Name"
+        />
         {/* --------------------------------------------------------------- PHONE NUMBER */}
-        <div className="col-md-6">
-          <div className="form-floating">
-            <input
-              type="number"
-              className="form-control"
-              id="phone"
-              placeholder="XXX-XXX-XXXX"
-              required
-            />
-            <label htmlFor="phone">Phone Number</label>
-          </div>
-        </div>
+        <Form
+          className="col-md-6"
+          type="number"
+          id="phone"
+          placeholder="XXX-XXX-XXXX"
+          htmlFor="phone"
+          label="Phone Number"
+        />
         {/* --------------------------------------------------------------- EMAIL ADDRESS */}
-        <div className="col-md-12">
-          <div className="form-floating">
-            <input
-              type="email"
-              className="form-control"
-              id="email"
-              placeholder="name@example.com"
-              required
-            />
-            <label htmlFor="email">Email Address</label>
-          </div>
-        </div>
+        <Form
+          className="col-md-12"
+          type="email"
+          id="email"
+          placeholder="name@example.com"
+          htmlFor="email"
+          label="Email Address"
+        />
         {/* --------------------------------------------------------------- ADDRESS */}
-        <div className="col-12">
-          <div className="form-floating">
-            <input
-              type="text"
-              className="form-control"
-              id="address"
-              placeholder="1234 Main St"
-            />
-            <label htmlFor="address" className="form-label">
-              Address
-            </label>
-          </div>
-        </div>
+        <Form
+          className="col-md-12"
+          type="text"
+          id="address"
+          placeholder="1234 Main St"
+          htmlFor="address"
+          label="Address"
+        />
         {/* --------------------------------------------------------------- CITY */}
-        <div className="col-md-6">
-          <div className="form-floating">
-            <input
-              type="text"
-              className="form-control"
-              id="city"
-              placeholder="City Name"
-            />
-            <label htmlFor="city" className="form-label">
-              City
-            </label>
-          </div>
-        </div>
+        <Form
+          className="col-md-6"
+          type="text"
+          id="city"
+          placeholder="City Name"
+          htmlFor="city"
+          label="City"
+        />
         {/* --------------------------------------------------------------- STATE */}
-        <div className="col-md-4">
-          <div className="form-floating">
-            <input
-              type="text"
-              className="form-control"
-              id="state"
-              placeholder="State Name"
-            />
-            <label htmlFor="state" className="form-label">
-              State
-            </label>
-          </div>
-        </div>
+        <Form
+          className="col-md-4"
+          type="text"
+          id="state"
+          placeholder="State Name"
+          htmlFor="state"
+          label="State"
+        />
         {/* --------------------------------------------------------------- ZIP CODE */}
-        <div className="col-md-2">
-          <div className="form-floating">
-            <input
-              type="text"
-              className="form-control"
-              id="zip"
-              placeholder="Zip Code"
-              required
-            />
-            <label htmlFor="zip" className="form-label">
-              Zip
-            </label>
-          </div>
-        </div>
+        <Form
+          className="col-md-2"
+          type="text"
+          id="zip"
+          placeholder="Zip Code"
+          htmlFor="zip"
+          label="Zip"
+        />
         {/* --------------------------------------------------------------- DESCRIPTION */}
         <div className="col-md-12">
           <div className="form-floating">
@@ -186,6 +154,7 @@ const Contact = ({ id }) => {
               : "Choose Picture 3"}
           </label>
         </div>
+        {/* --------------------------------------------------------------- SUBMIT BUTTON */}
         <div className="col-md-12 text-center">
           <button
             type="submit"

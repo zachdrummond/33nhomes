@@ -121,6 +121,7 @@ const Contact = ({ id }) => {
             type="file"
             id="picture1"
             onChange={onFileChange}
+            required
           />
           <label htmlFor="picture1" className="form-label">
             {isFilePicked.picture1

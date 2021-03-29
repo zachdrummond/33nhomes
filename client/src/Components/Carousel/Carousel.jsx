@@ -1,10 +1,12 @@
 import "./carousel.css";
 
 const Carousel = () => {
-
-
   return (
-    <div id="myCarousel" className="carousel slide" data-bs-ride="carousel">
+    <div
+      id="myCarousel"
+      className="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
       {/* ------------------------------------------------------------------ Carousel Indicators */}
       <div className="carousel-indicators">
         <button
@@ -39,7 +41,6 @@ const Carousel = () => {
             height="100%"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
-            
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777"></rect>
@@ -66,12 +67,10 @@ const Carousel = () => {
             height="100%"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
-            
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777"></rect>
           </svg>
-
           <div className="container">
             <div className="carousel-caption">
               <h1>Another example headline.</h1>
@@ -94,7 +93,6 @@ const Carousel = () => {
             height="100%"
             xmlns="http://www.w3.org/2000/svg"
             aria-hidden="true"
-            
             focusable="false"
           >
             <rect width="100%" height="100%" fill="#777"></rect>

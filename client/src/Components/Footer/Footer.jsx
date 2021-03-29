@@ -13,7 +13,7 @@ const Footer = () => {
 
   return (
     <footer className="py-3 bg-dark text-light">
-      <div className="container text-center">
+      <div className="container text-center bg-dark pb-1">
         <div className="row">
           {/* ---------------------------------------------------------------------------- Logo & Social Media */}
           <div className="col-12 col-md">

@@ -1,7 +1,19 @@
+import { useState } from "react";
 import { Link } from "react-scroll";
 import DropdownItem from "./DropdownItem";
 
 const Navbar = () => {
+
+  const [menuBtn, setMenuBtn] = useState(false);
+
+  const handleMenuBtn = () => {
+    if(menuBtn == false){
+      setMenuBtn(true);
+    } else if (menuBtn == true){
+      setMenuBtn(false);
+    }
+  }
+
   return (
     // Breakpoint: >= 768px (navbar-expand)
     <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
@@ -19,9 +31,13 @@ const Navbar = () => {
           aria-controls="navbarNavDropdown"
           aria-expanded="false"
           aria-label="Toggle navigation"
+          onClick={handleMenuBtn}
         >
           <span className="">Menu</span>
         </button>
+        {menuBtn ? <Link className="btn greenWhite" to="Contact Us" offset={-100}>
+          Get a Quote
+        </Link> : ""}
         {/* --------------------------------------------------------------- NAVBAR MENU ITEMS */}
         <div
           className="collapse navbar-collapse text-center"
@@ -42,9 +58,9 @@ const Navbar = () => {
           </ul>
         </div>
         {/* --------------------------------------------------------------- GET A QUOTE BUTTON */}
-        <Link className="btn greenWhite" to="Contact Us" offset={-100}>
+        {!menuBtn ? <Link className="btn greenWhite" to="Contact Us" offset={-100}>
           Get a Quote
-        </Link>
+        </Link> : ""}
       </div>
     </nav>
   );

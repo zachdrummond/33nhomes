@@ -31,13 +31,7 @@ const DropdownItem = ({ name }) => {
             return item.options.map((options) => {
               return (
                 <li key={options}>
-                  <Link
-                    className="dropdown-item"
-                    to={`${options}`}
-                    offset={-100}
-                  >
-                    {options}
-                  </Link>
+                  <a class="dropdown-item" href="#">Action</a>
                 </li>
               );
             });

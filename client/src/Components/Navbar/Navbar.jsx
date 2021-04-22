@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-scroll";
 import DropdownItem from "./DropdownItem";
 
 const Navbar = () => {
@@ -16,7 +15,7 @@ const Navbar = () => {
 
   return (
     // Breakpoint: >= 768px (navbar-expand)
-    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top">
+    <nav className="navbar navbar-expand-md navbar-light bg-light sticky-top pt-1 pb-1">
       {/* --------------------------------------------------------------- BRAND LOGO */}
       <a className="navbar-brand" href="/">
         33 North Homes & Construction LLC
@@ -35,9 +34,9 @@ const Navbar = () => {
         >
           <span className="">Menu</span>
         </button>
-        {menuBtn ? <Link className="btn greenWhite" to="Contact Us" offset={-100}>
+        {menuBtn ? <a className="btn greenWhite" href="#Contact Us">
           Get a Quote
-        </Link> : ""}
+        </a> : ""}
         {/* --------------------------------------------------------------- NAVBAR MENU ITEMS */}
         <div
           className="collapse navbar-collapse text-center"
@@ -58,9 +57,9 @@ const Navbar = () => {
           </ul>
         </div>
         {/* --------------------------------------------------------------- GET A QUOTE BUTTON */}
-        {!menuBtn ? <Link className="btn greenWhite" to="Contact Us" offset={-100}>
+        {!menuBtn ? <a className="btn greenWhite" href="#Contact Us">
           Get a Quote
-        </Link> : ""}
+        </a> : ""}
       </div>
     </nav>
   );

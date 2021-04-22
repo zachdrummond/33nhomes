@@ -35,7 +35,7 @@ const Contact = ({ id }) => {
   };
 
   return (
-    <section id={id} className="my-5">
+    <section id={id} className="py-5">
       <form className="row g-3">
         <h1 className="text-center">Tell Us About Your Project</h1>
         {/* --------------------------------------------------------------- FIRST & LAST NAME */}

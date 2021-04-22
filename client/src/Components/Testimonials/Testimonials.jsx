@@ -42,7 +42,7 @@ const Testimonials = ({ id }) => {
 
   return (
     <>
-      <section id={id} className="my-5">
+      <section id={id} className="py-5">
         <h1 className="text-center mb-4">Customer Reviews</h1>
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {reviews.map((review) => {

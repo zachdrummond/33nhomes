@@ -1,7 +1,7 @@
 const Section = ({ id, title, image, text, direction }) => {
   return (
     <>
-      <section id={id} className="my-5">
+      <section id={id} className="py-5">
         <h1 className="text-center mb-4">{title}</h1>
         <div className="row">
           <div className="col-6 col-md">

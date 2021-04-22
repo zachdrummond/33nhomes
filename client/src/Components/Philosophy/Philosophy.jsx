@@ -1,7 +1,7 @@
 const Philosophy = ({ id }) => {
   return (
     <>
-      <section id={id} className="my-5">
+      <section id={id} className="py-5">
         <h1 className="text-center mb-4">Philosophy & Benefits</h1>
         <p>
           <u>

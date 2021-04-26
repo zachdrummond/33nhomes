@@ -44,6 +44,7 @@ const Contact = ({ id }) => {
           type="text"
           id="name"
           placeholder="First Name Last Name"
+          ariaDescribedby="Name"
           htmlFor="name"
           label="First and Last Name"
         />
@@ -53,6 +54,7 @@ const Contact = ({ id }) => {
           type="number"
           id="phone"
           placeholder="XXX-XXX-XXXX"
+          ariaDescribedby="Phone Number"
           htmlFor="phone"
           label="Phone Number"
         />
@@ -62,6 +64,7 @@ const Contact = ({ id }) => {
           type="email"
           id="email"
           placeholder="name@example.com"
+          ariaDescribedby="Email Address"
           htmlFor="email"
           label="Email Address"
         />
@@ -71,6 +74,7 @@ const Contact = ({ id }) => {
           type="text"
           id="address"
           placeholder="1234 Main St"
+          ariaDescribedby="Address"
           htmlFor="address"
           label="Address"
         />
@@ -80,6 +84,7 @@ const Contact = ({ id }) => {
           type="text"
           id="city"
           placeholder="City Name"
+          ariaDescribedby="City Name"
           htmlFor="city"
           label="City"
         />
@@ -89,6 +94,7 @@ const Contact = ({ id }) => {
           type="text"
           id="state"
           placeholder="State Name"
+          ariaDescribedby="State Name"
           htmlFor="state"
           label="State"
         />
@@ -98,6 +104,7 @@ const Contact = ({ id }) => {
           type="text"
           id="zip"
           placeholder="Zip Code"
+          ariaDescribedby="Zip Code"
           htmlFor="zip"
           label="Zip"
         />
@@ -109,6 +116,7 @@ const Contact = ({ id }) => {
               id="description"
               rows="3"
               placeholder="Description"
+              aria-describedby="Description"
               required
             ></textarea>
             <label htmlFor="description">Briefly Describe Your Project</label>

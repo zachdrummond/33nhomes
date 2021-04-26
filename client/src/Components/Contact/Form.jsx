@@ -1,4 +1,4 @@
-const Form = ({ className, type, id, placeholder, htmlFor, label }) => {
+const Form = ({ className, type, id, placeholder, ariaDescribedby, htmlFor, label }) => {
   return (
     <div className={className}>
       <div className="form-floating">
@@ -7,6 +7,7 @@ const Form = ({ className, type, id, placeholder, htmlFor, label }) => {
           className="form-control"
           id={id}
           placeholder={placeholder}
+          aria-describedby={ariaDescribedby}
           required
         />
         <label htmlFor={htmlFor} className="form-label">{label}</label>
